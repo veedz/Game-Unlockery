@@ -36,13 +36,13 @@ jobs:
       run: echo "::set-output name=app_version::$(grep versionName app/build.gradle | sed -n 's/.*versionName \"\([0-9.]*\)\".*/\1/p')"
 
     - name: Rename APK
-      run: mv app/build/outputs/apk/debug/app-debug.apk spoof-memeui-cam-v${{ steps.version.outputs.app_version }}.apk
+      run: mv app/build/outputs/apk/debug/app-debug.apk Spoof MemeUI Cam v${{ steps.version.outputs.app_version }}.apk
 
     - name: Upload APK
       uses: actions/upload-artifact@v4
       with:
         name: Spoof MemeUI Cam
-        path: spoof-memeui-cam-v${{ steps.version.outputs.app_version }}.apk
+        path: Spoof MemeUI Cam v${{ steps.version.outputs.app_version }}.apk
 
     - name: Create Release
       id: create_release
