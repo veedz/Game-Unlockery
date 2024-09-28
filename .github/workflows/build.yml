@@ -48,7 +48,7 @@ jobs:
       id: create_release
       uses: actions/create-release@v1
       with:
-        files: spoof-memeui-cam-v${{ steps.version.outputs.app_version }}.apk
+        files: Spoof MemeUI Cam v${{ steps.version.outputs.app_version }}.apk
         tag_name: ${{ steps.version.outputs.app_version }}
         release_name: ${{ steps.version.outputs.app_version }}
         prerelease: false
@@ -62,5 +62,5 @@ jobs:
           -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
           -H "Content-Type: application/octet-stream" \
           --data-binary "@spoof-memeui-cam-v${{ steps.version.outputs.app_version }}.apk" \
-          "https://uploads.github.com/repos/${{ github.repository }}/releases/$release_id/assets?name=spoof-memeui-cam-v${{ steps.version.outputs.app_version }}.apk")
+          "https://uploads.github.com/repos/${{ github.repository }}/releases/$release_id/assets?name=Spoof MemeUI Cam v${{ steps.version.outputs.app_version }}.apk")
         echo "Uploaded asset: $asset_url"
