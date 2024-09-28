@@ -18,7 +18,7 @@ import de.robv.android.xposed.callbacks.XC_LoadPackage;
 @SuppressWarnings("ConstantConditions")
 public class GAMEUNLOCKER implements IXposedHookLoadPackage {
 
-    private static final String TAG = HAKANKUSIA.class.getSimpleName();
+    private static final String TAG = GAMEUNLOCKER.class.getSimpleName();
     // Packages to Spoof as Poco F4
     private static final String[] packagesToChangePocoF4 = {
         "com.android.camera"
