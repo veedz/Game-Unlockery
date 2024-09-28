@@ -1,6 +1,6 @@
 <resources>
 	<string name="app_name">Spoof MemeUI Cam</string>
-	<string name="xposed_description">Spoof your device as Poco F4 model for fix MEMEUI CAMERA on port rom</string>
+	<string name="xposed_description">Memalsukan perangkat sebagai model Poco F4 untuk memperbaiki KAMERA MEMEUI pada port rom</string>
 	<string-array name="scope">
 		<item>com.android.camera</item>
 	</string-array>
