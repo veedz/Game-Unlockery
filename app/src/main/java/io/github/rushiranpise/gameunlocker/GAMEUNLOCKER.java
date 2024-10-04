@@ -16,9 +16,9 @@ import de.robv.android.xposed.callbacks.XC_LoadPackage;
 
 @SuppressLint("DiscouragedPrivateApi")
 @SuppressWarnings("ConstantConditions")
-public class GAMEUNLOCKER implements IXposedHookLoadPackage {
+public class HAKANKUSIA implements IXposedHookLoadPackage {
 
-    private static final String TAG = GAMEUNLOCKER.class.getSimpleName();
+    private static final String TAG = HAKANKUSIA.class.getSimpleName();
     // Packages to Spoof as Poco F4
     private static final String[] packagesToChangePocoF4 = {
         "com.android.camera"
@@ -46,7 +46,6 @@ public class GAMEUNLOCKER implements IXposedHookLoadPackage {
         setPropValue("HARDWARE", "Qualcomm Technologies, Inc SM8250");
         setPropValue("MODEL", "munch");
         setPropValue("BOARD", "kona");
-        // setPropValue("MODEL", "munch");
     }
     
     private static void setPropValue(String key, Object value) {
