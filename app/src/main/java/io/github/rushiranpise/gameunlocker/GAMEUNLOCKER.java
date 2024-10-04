@@ -42,9 +42,11 @@ public class GAMEUNLOCKER implements IXposedHookLoadPackage {
         setPropValue("BRAND", "Xiaomi");
         setPropValue("MANUFACTURER", "Xiaomi");
         setPropValue("DEVICE", "munch");
+        setPropValue("PRODUCT", "munch");
+        setPropValue("HARDWARE", "munch");
         setPropValue("MODEL", "munch");
     }
-
+    
     private static void setPropValue(String key, Object value) {
         try {
             Log.d(TAG, "Mendefinisikan prop " + key + " ke " + value.toString());
