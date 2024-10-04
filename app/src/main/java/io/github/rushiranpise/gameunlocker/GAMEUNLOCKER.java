@@ -45,6 +45,8 @@ public class GAMEUNLOCKER implements IXposedHookLoadPackage {
         setPropValue("PRODUCT", "munch");
         setPropValue("HARDWARE", "munch");
         setPropValue("MODEL", "munch");
+        setPropValue("BOARD", "kona");
+        // setPropValue("MODEL", "munch");
     }
     
     private static void setPropValue(String key, Object value) {
