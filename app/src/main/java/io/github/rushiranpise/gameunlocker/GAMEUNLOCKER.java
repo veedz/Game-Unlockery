@@ -43,7 +43,7 @@ public class GAMEUNLOCKER implements IXposedHookLoadPackage {
         setPropValue("MANUFACTURER", "Xiaomi");
         setPropValue("DEVICE", "munch");
         setPropValue("PRODUCT", "munch");
-        setPropValue("HARDWARE", "munch");
+        setPropValue("HARDWARE", "Qualcomm Technologies, Inc SM8250");
         setPropValue("MODEL", "munch");
         setPropValue("BOARD", "kona");
         // setPropValue("MODEL", "munch");
